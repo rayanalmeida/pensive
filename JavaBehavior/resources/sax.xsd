@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/sax" xmlns:tns="http://www.example.org/sax"
+	elementFormDefault="qualified">
+	<xs:complexType name="project">
+		<xs:sequence>
+			<xs:element name="property" type="xs:string" />
+			<xs:element name="target" type="tns:target-type" />
+			<xs:element name="path" type="tns:path-type" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="target-type">
+		<xs:sequence>
+			<xs:element name="delete" type="xs:string" />
+			<xs:element name="mkdir" type="xs:string" />
+			<xs:element name="jar" type="tns:jar-type" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="path-type">
+		<xs:sequence>
+			<xs:element name="fileset" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="jar-type">
+		<xs:sequence>
+			<xs:element name="manifest" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

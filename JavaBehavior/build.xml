@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--Declare common variables-->
+<project name="JavaBehavior" basedir="." default="compile">
+
+<property name="build.dir" value="build"/>
+<property name="dist.dir" value="dist"/>
+<property name="jar.name" value="JavaBehavior.jar"/>
+
+<!-- referring to external JAR files to resolve build-->
+<path id="classpath">
+	<fileset dir="D:\OMS\trunk\OMSBuild\lib\deployables"/>
+</path>
+
+<target name="clean">
+	<delete dir="${build.dir}"/>
+	<delete file="bin/${jar.name}"/>
+	<delete dir="${dist.dir}"/>
+</target>
+
+<target name="compile" depends="clean">
+	<mkdir dir="${build.dir}"/>
+	<javac srcdir="src" destdir="${build.dir}" classpathref="classpath"/>
+</target>
+
+<target name="jar" depends="compile">
+	<jar destfile="./bin/${jar.name}" basedir="${build.dir}">
+		<manifest>
+			<attribute name="Main-Class" value="Assignment"/>
+		</manifest>
+	</jar>
+</target>
+
+<target name="dist" depends="compile">
+	<mkdir dir="${dist.dir}"/>
+	<copy todir="${dist.dir}"> 
+		<fileset dir="${build.dir}">
+			<include name="**/Puzzle*"/>
+			<exclude name="**/*Test*"/>
+		</fileset>
+	</copy>
+</target>
+</project>

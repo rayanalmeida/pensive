@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Rayan/.m2/repository/jboss/jboss-j2ee/4.2.2.GA/jboss-j2ee-4.2.2.GA.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="jboss"/>
+			<attribute name="maven.artifactId" value="jboss-j2ee"/>
+			<attribute name="maven.version" value="4.2.2.GA"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Rayan/.m2/repository/axis/axis/1.4/axis-1.4.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="axis"/>
+			<attribute name="maven.artifactId" value="axis"/>
+			<attribute name="maven.version" value="1.4"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Rayan/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="commons-logging"/>
+			<attribute name="maven.artifactId" value="commons-logging"/>
+			<attribute name="maven.version" value="1.0.4"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Rayan/.m2/repository/com/ibm/com.ibm.mq/7.0.0/com.ibm.mq-7.0.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.ibm"/>
+			<attribute name="maven.artifactId" value="com.ibm.mq"/>
+			<attribute name="maven.version" value="7.0.0"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Rayan/.m2/repository/com/ibm/com.ibm.mq.jmqi/7.0.0/com.ibm.mq.jmqi-7.0.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.ibm"/>
+			<attribute name="maven.artifactId" value="com.ibm.mq.jmqi"/>
+			<attribute name="maven.version" value="7.0.0"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
